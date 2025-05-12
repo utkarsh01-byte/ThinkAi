@@ -1,0 +1,298 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>ThinkAI - Intelligent Solutions</title>
+  <style>
+    /* === Color and Theme Variables === */
+    :root {
+      --primary: #2563eb;
+      --accent: #7c3aed;
+      --bg: #f9fafb;
+      --text-dark: #1f2937;
+      --text-muted: #6b7280;
+      --white: #ffffff;
+    }
+
+    /* === Global Styles === */
+    body {
+      font-family: 'Segoe UI', sans-serif;
+      margin: 0;
+      padding: 0;
+      background-color: var(--bg);
+      color: var(--text-dark);
+      line-height: 1.6;
+    }
+
+    /* === Header & Navigation === */
+    header {
+      background-color: #111827;
+      color: var(--white);
+      padding: 20px 0;
+    }
+
+    nav {
+      max-width: 1100px;
+      margin: auto;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 0 20px;
+    }
+
+    .logo {
+      font-size: 28px;
+      font-weight: bold;
+    }
+
+    nav ul {
+      list-style: none;
+      display: flex;
+      gap: 24px;
+      margin: 0;
+      padding: 0;
+    }
+
+    nav a {
+      color: var(--white);
+      text-decoration: none;
+      font-weight: 500;
+      transition: color 0.3s;
+    }
+
+    nav a:hover {
+      color: var(--primary);
+    }
+
+    /* === Main Content === */
+    main {
+      max-width: 1100px;
+      margin: 60px auto;
+      padding: 0 20px;
+    }
+
+    section {
+      margin-bottom: 80px;
+    }
+
+    h1 {
+      font-size: 2.8rem;
+      font-weight: 700;
+      line-height: 1.2;
+      margin-bottom: 1rem;
+    }
+
+    h2 {
+      font-size: 2rem;
+      margin-bottom: 0.5rem;
+    }
+
+    h3 {
+      font-size: 1.2rem;
+      color: var(--accent);
+      margin-bottom: 0.5rem;
+    }
+
+    p {
+      font-size: 1rem;
+      color: var(--text-muted);
+      max-width: 700px;
+    }
+
+    .btn {
+      background-color: var(--primary);
+      color: var(--white);
+      padding: 12px 24px;
+      border: none;
+      border-radius: 8px;
+      font-size: 1rem;
+      font-weight: 600;
+      cursor: pointer;
+      margin-top: 20px;
+      transition: background 0.3s;
+    }
+
+    .btn:hover {
+      background-color: #1d4ed8;
+    }
+
+    /* === Features Section === */
+    .features {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 30px;
+      margin-top: 30px;
+    }
+
+    .feature-card {
+      background: var(--white);
+      padding: 20px;
+      border-radius: 12px;
+      box-shadow: 0 4px 10px rgba(0, 0, 0, 0.04);
+    }
+
+    /* === Images === */
+    img {
+      width: 100%;
+      border-radius: 10px;
+      margin-top: 20px;
+    }
+
+    /* === Contact Form === */
+    form {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 10px;
+      margin-top: 20px;
+    }
+
+    input[type="email"] {
+      padding: 12px;
+      flex: 1;
+      border: 1px solid #d1d5db;
+      border-radius: 6px;
+      font-size: 1rem;
+    }
+
+    /* === Footer === */
+    footer {
+      background-color: #1f2937;
+      color: var(--white);
+      padding: 40px 20px;
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-between;
+    }
+
+    footer h3 {
+      margin-bottom: 10px;
+    }
+
+    footer ul {
+      list-style: none;
+      padding: 0;
+    }
+
+    footer a {
+      color: #9ca3af;
+      text-decoration: none;
+      font-size: 0.95rem;
+    }
+
+    footer a:hover {
+      color: var(--white);
+    }
+
+    .footer-bottom {
+      margin-top: 20px;
+      width: 100%;
+      text-align: center;
+    }
+
+    /* === Responsive === */
+    @media (max-width: 600px) {
+      nav {
+        flex-direction: column;
+        gap: 12px;
+      }
+
+      form {
+        flex-direction: column;
+      }
+
+      footer {
+        flex-direction: column;
+        gap: 20px;
+      }
+
+      h1 {
+        font-size: 2rem;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Header -->
+  <header>
+    <nav>
+      <div class="logo">ThinkAI</div>
+      <ul>
+        <li><a href="#home">Home</a></li>
+        <li><a href="#features">Features</a></li>
+        <li><a href="#about">About</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <!-- Main Content -->
+  <main>
+    <!-- Hero Section -->
+    <section id="home">
+      <h1>Intelligent Solutions for Tomorrow</h1>
+      <p>ThinkAI is revolutionizing industries with cutting-edge artificial intelligence tools, designed to scale innovation and efficiency.</p>
+      <button class="btn">Get Started</button>
+    </section>
+
+    <!-- Features Section -->
+    <section id="features">
+      <h2>Our AI Solutions</h2>
+      <p>Discover how ThinkAI's technology transforms businesses across sectors.</p>
+      <div class="features">
+        <div class="feature-card">
+          <h3>Predictive Analytics</h3>
+          <p>Leverage machine learning to forecast trends and optimize operations in real time.</p>
+        </div>
+        <div class="feature-card">
+          <h3>Natural Language Processing</h3>
+          <p>Understand and interpret human language with AI-driven NLP models for smarter communication.</p>
+        </div>
+        <div class="feature-card">
+          <h3>Computer Vision</h3>
+          <p>Enable advanced image recognition and analysis to power intelligent visual systems.</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about">
+      <h2>About ThinkAI</h2>
+      <img src="" alt="ThinkAI Team">
+      <p>Founded in 2023, ThinkAI is a pioneering startup making artificial intelligence accessible and impactful for businesses of all sizes. Our expert team designs future-focused solutions for today's most pressing challenges.</p>
+      <button class="btn">Learn More</button>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact">
+      <h2>Ready to Get Started?</h2>
+      <p>Subscribe to our newsletter and stay ahead with the latest AI insights.</p>
+      <form>
+        <input type="email" placeholder="Enter your email" required />
+        <button type="submit" class="btn">Subscribe</button>
+      </form>
+    </section>
+  </main>
+
+  <!-- Footer -->
+  <footer>
+    <div>
+      <h3>ThinkAI</h3>
+      <p>Smart solutions for tomorrow's challenges.</p>
+    </div>
+    <div>
+      <h3>Quick Links</h3>
+      <ul>
+        <li><a href="#">About Us</a></li>
+        <li><a href="#">Services</a></li>
+        <li><a href="#">Careers</a></li>
+      </ul>
+    </div>
+    <div class="footer-bottom">
+      <p>&copy; 2023 ThinkAI. All rights reserved.</p>
+    </div>
+  </footer>
+
+</body>
+</html>
